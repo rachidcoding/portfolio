@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Owl-Carousel.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <title>My portfolyo</title>
+</head>
+<body>
+    <!-- Navrab start -->
+    <nav class="navbar">
+        <div class="max-width">
+         <div class="logo"><a href="#home"><img src="images/logo.png" alt="Rachid"/></a></div>
+          <ul class="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#skills">Skils</a></li>
+              <li><a href="#teams">Teames</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+          </div>
+        </div>
+    </nav>
+    <!-- Navrab End -->
+
+<p>Redirecting in <span id="countdown"></span></p>
+
+
+
+    <!-- Contact Sesion Start -->
+    <section class="contact" id="contact">
+      <div class="max-width">
+      <h2 class="title">Contact Me</h2>
+        <div class="contact-content">
+           <div class="colum left">
+             <div class="text">Tell Us About Your Project.</div> 
+             <p>Would You Like To Start A Project With Us?<br />If you want to start or grow up you can choose <br /> your need from our services you don’t need to talk it all </p>
+               <div class="icons">
+                   <div class="row">
+                       <i class="fas fa-user"></i>
+                       <div class="info">
+                          <div class="head">Name</div>
+                          <div class="sub-title">Rahid Driouch</div> 
+                       </div>
+                   </div>
+                   <div class="row">
+                       <i class="fas fa-map-marker-alt"></i>
+                       <div class="info">
+                          <div class="head">Adress</div>
+                          <div class="sub-title">Marker, Nepal</div> 
+                       </div>
+                   </div>
+                   <div class="row">
+                       <i class="fas fa-envelope"></i>
+                       <div class="info">
+                          <div class="head">Email</div>
+                          <div class="sub-title">rachid@portfolio.twinmoney.space</div> 
+                       </div>
+                   </div>
+               </div>
+            </div>
+            <div class="colum right">
+               <div class="text">Message Me</div>
+               <div id="error" class=""></div>
+               <form action="#">
+                 <div class="filds">
+                     <div class="fild name">
+                         <input id="name" type="text" maxlength="30" placeholder="Name" require>
+                     </div>
+                     <div class="fild email">
+                         <input id="email" type="email" maxlength="60" placeholder="Email" require>
+                     </div>
+                 </div>
+                 <div class="fild">
+                         <input id="numero" type="number" maxlength="16" placeholder="Phonne Number" require>
+                     </div>
+                     <div class="fild">
+                         <input id="subject" type="text" maxlength="30" placeholder="Subject" require>
+                     </div>
+                     <div class="fild textarea">
+                        <textarea id="msg" cols="30" rows="10" maxlength="200" placeholder="Describe... " require></textarea>
+                     </div>
+                     <div class="button">
+                         <button id="btn" type="submit">Send Message</button>
+                     </div>
+               </form>
+            </div>
+        </div>
+      </div> 
+    </section>
+    <!-- Contact Sesion End -->
+    <!-- Footer Sesion Start -->
+    <footer>
+        <span>Created By <a href="#">Rachidousouss </a>| <span class="fas fa-copyright"> 2020 All Right Reservide By www.rachidousouss.com</span></span>
+   </footer>
+    <!-- Footer Sesion End -->
+    <script src="js/script.js"></script>
+<script>
+  window.onload = ()=>{
+   // Set the redirect URL
+var redirectUrl = 'https://www.example.com';
+
+// Set the countdown duration in seconds
+var countdownDuration = 60;
+
+// Get the countdown element by its ID
+var countdownElement = document.getElementById('countdown');
+
+// Function to update the countdown timer
+function updateCountdown() {
+  countdownElement.textContent = countdownDuration + ' seconds';
+
+  if (countdownDuration > 0) {
+    countdownDuration--;
+    setTimeout(updateCountdown, 1000); // Update every second (1000 milliseconds)
+  } else {
+    window.location.href = redirectUrl; // Redirect when countdown reaches 0
+  }
+}
+
+// Start the countdown
+updateCountdown();
+
+
+}
+
+</script>   
+
+</body>
+</html>
